@@ -1,0 +1,44 @@
+$ git add -A     - Add all files in master with -A option.
+$ git commit -m " comments"    -Commit without editing vi editor   
+$git checkout  file name - Match with previous file in case current file update by  wrong.
+$git checkout -f     - It will match all previous files
+$git log    -It will show audit logs mean what the changes done by user.
+$git log -p -5    -It will show last five logs about what changes have been done(Use q for quit if not required)
+$git diff   -It compare with previous file.
+$git diff  --staged  -It will compare last change.
+$git commit -a -m "Comment"   -It will commit directly*
+$git rm file name   -It will remove from working tree and staging area.
+$git rm --cached  - It will remove from staging area only.
+$git status  -It shows the current status(Changed,Modified,Delete) for working tree.
+$git status -s  -It shows below output regarding changes in staging area and working area.
+MM file name     -First M mean modified in staging area and 2nd M mean modified in working area
+    M file Name
+    M file name
+$git branch branchname   -it will create new branch.
+$git checkput branchname  -For switch branches.
+$git checkout -b branchname  -It will create new branch and switch to newly created branch.
+========================================================================
+$git remote add master https://github.com/codewithmiteshsingh25/Linux-Notes
+    -It will add local machin(Git  Repository/Terminal) to Github.
+$git remote  -It will show remote of Github
+$git remote -v    -It will show URL of Github(fetch/push)
+$git push master master/Linux -Note
+  -It will push local machine to Github account.
+  -But before push need to read/write access at Github for local machin
+    >Github settings>SSH and GPG key>
+   -Google for Generating new SSH key and adding it to the ssh-agent/Connecting to Githu with SSH
+   $ssh-keygen -t rsa -b 4096 -C "59225077+niteshsingh25@users.noreply.github.com"
+   $eval $(ssh-agent -s)
+   $ssh-add ~/.ssh/id_rsa
+   -Deploy new generated ssh key at Github account
+   -Google Adding new ssh key to your Github account
+   $cat ~/.ssh/id_rsa.pub  -Copy new ssh ket and add in >Github settings>SSH and GPG key> and give title of Local Machine
+$git remote set-url master https://github.com/niteshsingh25/Linux-Note.git
+  -Set URL if  remote repository not found by push cmds
+$git clone URL /foldername  -It clone file as per our requirement.
+
+
+
+
+
+
